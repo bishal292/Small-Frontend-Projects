@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  height: 100vh;
+} 
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+#right-nav {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.nav-list {
+  display: flex;
+  justify-content: space-between;
+}
+.nav-list li {
+  list-style: none;
+}
+.nav-list li a {
+  text-decoration: none;
+  color: black;
+  padding: 10px 20px;
+  font-size: 20px;
+}
+#language-selector{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-right: 50px;
+}
+#second-nav {
+  max-width: 60%;
+  margin-bottom: 20px;
+}
+#hero-container {
+  width: 100%;
+  height: 40%;
+  /* background-color: bisque; */
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto; /* ✅ allows scrolling */
+  scroll-behavior: smooth; /* optional: smooth scrolling */
+}
+
+#hero-container::-webkit-scrollbar {
+    height: 8px;
+}
+
+/* Style the draggable thumb */
+#hero-container::-webkit-scrollbar-thumb {
+    background: rgb(255, 106, 52);
+    border-radius: 4px;
+}
+
+#hero-container::-webkit-scrollbar-thumb:hover {
+    background: orangered; /* Darker color on hover */
+}
+#hero-container::-webkit-scrollbar-track {
+    background: transparent;
+    /* color: transparent; */
+    box-sizing: none;
+}
+
+.hc-item {
+  flex-grow: 0; /* Restrict the flex item to grow if there is extra space rather than the space required by them. */
+  flex-shrink: 0; /* Restrict the item to get shrink(Shorter) if there is less space.Allows item to fix their width.So that they cannot be shrink. */
+  /* 
+    flex-basis:
+    Specifies the initial main size of a flex item before any available space is distributed according to flex-grow and flex-shrink.
+    Setting it to 'auto' means the size is based on the item's content, unless otherwise specified by width or height.
+*/
+  /* flex-basis: auto; */
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  width: 70%;
+  background-color: white;
+  padding: 20px;
+}
+.hc-item h3 {
+  font-size: xx-large;
+}
+.hc-item-content {
+  display: flex;
+  font-size: x-large;
+  gap: 110px;
+}
+.hc-item-content p {
+  color: rgb(58, 58, 58);
+}
+.hc-item h1 {
+  font-size: 8vw;
+  padding-left: 10vw;
+  font-weight: 100;
+}
+
+#image-container {
+  width: 100%;
+  height: 47%;
+  background-color: aquamarine;
+}
+#image-container img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
