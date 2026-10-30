@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="A collection of frontend development projects built using HTML, CSS and JavaScript."
+    />
+    <title>Frontend Projects | My Playground</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <nav>
+      <div class="container nav-content">
+        <a href="/" class="logo">Frontend<span>.</span>Lab</a>
+
+        <!-- Replace with your GitHub profile URL -->
+        <a
+          href="https://github.com/bishal292"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="github-link"
+        >
+          GitHub ↗
+        </a>
+      </div>
+    </nav>
+
+    <main>
+      <section class="hero container">
+        <span class="tag">HTML · CSS · JAVASCRIPT</span>
+
+        <h1>Small Projects.<br /><span>Big Creativity.</span></h1>
+
+        <p>
+          A collection of frontend experiments, creative ideas, and interactive
+          web applications built while exploring the world of web development.
+        </p>
+      </section>
+
+      <section class="projects-section container">
+        <div class="section-header">
+          <h2>Explore Projects</h2>
+          <span class="project-count" id="project-count"></span>
+        </div>
+
+        <div class="projects-grid" id="projects-grid">
+          <!-- Projects are rendered using JavaScript -->
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        Built with ❤️ using HTML, CSS & JavaScript.
+        <br /><br />
+        © <span id="year"></span> Frontend Lab
+      </div>
+    </footer>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>

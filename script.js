@@ -1,0 +1,128 @@
+const projects = [
+  {
+    name: "Blog Website Template",
+    folder: "Blog-website-template",
+    entry: "index.html",
+    icon: "✍️",
+    description: "A multi-page blog template with search and contact pages.",
+    technologies: ["HTML", "CSS"],
+  },
+  {
+    name: "Netflix Homepage Clone",
+    folder: "netflix-Homepage-clone",
+    entry: "index.html",
+    icon: "🎬",
+    description: "A streaming-service homepage inspired by Netflix.",
+    technologies: ["HTML", "CSS"],
+  },
+  {
+    name: "Obys Agency",
+    folder: "obys-agency",
+    entry: "index.html",
+    icon: "🎨",
+    description: "A creative agency site with interactive visual elements.",
+    technologies: ["HTML", "CSS", "JavaScript"],
+  },
+  {
+    name: "Premier",
+    folder: "premier",
+    entry: "index.html",
+    icon: "👗",
+    description: "A fashion magazine-inspired editorial website.",
+    technologies: ["HTML", "CSS"],
+  },
+  {
+    name: "Project 1",
+    folder: "Project-1",
+    entry: "index.html",
+    icon: "🌐",
+    description: "A small frontend project exploring web page layout.",
+    technologies: ["HTML", "CSS"],
+  },
+  {
+    name: "Project 2",
+    folder: "Project-2",
+    entry: "index.html",
+    icon: "🧩",
+    description: "A frontend layout project with visual styling and interactions.",
+    technologies: ["HTML", "CSS"],
+  },
+  {
+    name: "Project 3",
+    folder: "Project-3",
+    entry: "index.html",
+    icon: "✨",
+    description: "A creative website project for practicing frontend skills.",
+    technologies: ["HTML", "CSS"],
+  },
+  {
+    name: "Real-Time Clock",
+    folder: "real-time-clock",
+    entry: "index.html",
+    icon: "🕒",
+    description: "A real-time clock displayed in a custom interface.",
+    technologies: ["HTML", "CSS", "JavaScript"],
+  },
+  {
+    name: "Snake Game",
+    folder: "snake-game",
+    entry: "index.html",
+    icon: "🐍",
+    description: "A browser-based take on the classic snake game.",
+    technologies: ["HTML", "CSS", "JavaScript"],
+  },
+  {
+    name: "Tic-Tac-Toe",
+    folder: "Tic-Tac-Toe",
+    entry: "index.html",
+    icon: "⭕",
+    description: "A playable two-player Tic-Tac-Toe game.",
+    technologies: ["HTML", "CSS", "JavaScript"],
+  },
+  {
+    name: "UltraEdit Clone",
+    folder: "ultraedit-clone",
+    entry: "UltraEdit.html",
+    icon: "🖥️",
+    description: "A landing-page recreation inspired by the UltraEdit website.",
+    technologies: ["HTML", "CSS"],
+  },
+  {
+    name: "Weatheria",
+    folder: "weatheria",
+    entry: "index.html",
+    icon: "🌦️",
+    description: "A weather application interface for checking local conditions.",
+    technologies: ["HTML", "CSS", "JavaScript"],
+  },
+];
+
+const projectsGrid = document.getElementById("projects-grid");
+const projectCount = document.getElementById("project-count");
+const year = document.getElementById("year");
+
+function renderProjects() {
+  projectsGrid.innerHTML = projects
+    .map(
+      (project) => `
+        <article class="project-card">
+          <div class="project-icon" aria-hidden="true">${project.icon}</div>
+          <h3>${project.name}</h3>
+          <p>${project.description}</p>
+          <div class="tech-stack">
+            ${project.technologies.map((technology) => `<span>${technology}</span>`).join("")}
+          </div>
+          <a href="./projects/${project.folder}/${project.entry}" class="project-link">
+            <span>${project.linkText ?? "Explore Project"}</span>
+            <span aria-hidden="true">↗</span>
+          </a>
+        </article>
+      `,
+    )
+    .join("");
+
+  projectCount.textContent = `${projects.length} Projects`;
+}
+
+renderProjects();
+year.textContent = new Date().getFullYear();

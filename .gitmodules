@@ -1,0 +1,27 @@
+[submodule "projects/obys-agency"]
+	path = projects/obys-agency
+	url = https://github.com/bishal292/obys-Agency.git
+[submodule "projects/premier"]
+	path = projects/premier
+	url = https://github.com/bishal292/Premier.git
+[submodule "projects/weatheria"]
+	path = projects/weatheria
+	url = https://github.com/bishal292/full-stack-Weather-App.git
+[submodule "projects/real-time-clock"]
+	path = projects/real-time-clock
+	url = https://github.com/bishal292/real-time-clock.git
+[submodule "projects/snake-game"]
+	path = projects/snake-game
+	url = https://github.com/bishal292/snake-game.git
+[submodule "projects/ultraedit-clone"]
+	path = projects/ultraedit-clone
+	url = https://github.com/bishal292/UltraEdit-clone.git
+[submodule "projects/netflix-Homepage-clone"]
+	path = projects/netflix-Homepage-clone
+	url = https://github.com/bishal292/Netflix-homePage-clone.git
+[submodule "projects/Blog-website-template"]
+	path = projects/Blog-website-template
+	url = https://github.com/bishal292/Responsive-Blog-Website-Template.git
+[submodule "projects/Tic-Tac-Toe"]
+	path = projects/Tic-Tac-Toe
+	url = https://github.com/bishal292/Tic-Tac-Toe.git
