@@ -4,9 +4,6 @@
 [submodule "projects/premier"]
 	path = projects/premier
 	url = https://github.com/bishal292/Premier.git
-[submodule "projects/weatheria"]
-	path = projects/weatheria
-	url = https://github.com/bishal292/full-stack-Weather-App.git
 [submodule "projects/real-time-clock"]
 	path = projects/real-time-clock
 	url = https://github.com/bishal292/real-time-clock.git
