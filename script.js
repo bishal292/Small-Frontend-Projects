@@ -8,19 +8,21 @@ const projects = [
     technologies: ["HTML", "CSS"],
   },
   {
-    name: "Netflix Homepage Clone",
+    name: "Cinewave Streaming UI",
     folder: "netflix-Homepage-clone",
     entry: "index.html",
     icon: "🎬",
-    description: "A streaming-service homepage inspired by Netflix.",
+    label: "Independent UI recreation",
+    description: "A fictional streaming-service landing page design exercise.",
     technologies: ["HTML", "CSS"],
   },
   {
-    name: "Obys Agency",
+    name: "Northframe Studio",
     folder: "obys-agency",
     entry: "index.html",
     icon: "🎨",
-    description: "A creative agency site with interactive visual elements.",
+    label: "Independent UI recreation",
+    description: "A fictional creative-studio site with interactive visual elements.",
     technologies: ["HTML", "CSS", "JavaScript"],
   },
   {
@@ -80,20 +82,13 @@ const projects = [
     technologies: ["HTML", "CSS", "JavaScript"],
   },
   {
-    name: "UltraEdit Clone",
+    name: "TextForge Editor UI",
     folder: "ultraedit-clone",
     entry: "UltraEdit.html",
     icon: "🖥️",
-    description: "A landing-page recreation inspired by the UltraEdit website.",
+    label: "Independent UI recreation",
+    description: "A fictional software-product page with preview-only controls.",
     technologies: ["HTML", "CSS"],
-  },
-  {
-    name: "Weatheria",
-    folder: "weatheria",
-    entry: "index.html",
-    icon: "🌦️",
-    description: "A weather application interface for checking local conditions.",
-    technologies: ["HTML", "CSS", "JavaScript"],
   },
 ];
 
@@ -108,6 +103,7 @@ function renderProjects() {
         <article class="project-card">
           <div class="project-icon" aria-hidden="true">${project.icon}</div>
           <h3>${project.name}</h3>
+          <span class="project-label">${project.label ?? "Independent project"}</span>
           <p>${project.description}</p>
           <div class="tech-stack">
             ${project.technologies.map((technology) => `<span>${technology}</span>`).join("")}

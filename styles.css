@@ -103,6 +103,16 @@ nav {
   font-size: 16px;
 }
 
+.education-notice {
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--accent);
+  border-radius: 8px;
+  padding: 16px 18px;
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.7;
+}
+
 /* Projects */
 
 .projects-section {
@@ -163,6 +173,16 @@ nav {
 .project-card h3 {
   font-size: 19px;
   margin-bottom: 10px;
+}
+
+.project-label {
+  align-self: flex-start;
+  margin-bottom: 10px;
+  padding: 4px 8px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  color: var(--accent);
+  font-size: 11px;
 }
 
 .project-card p {
